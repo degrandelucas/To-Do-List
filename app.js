@@ -58,7 +58,7 @@ function botaoExcluir(index){
     botaoExcluir.innerHTML = '🗑️';
     botaoExcluir.addEventListener('click', removerItemBotaoExcluir => {
         listaItens.splice(index, 1); // Remove o item atual do array
-        atualizarListaTela(); // Atualiza a exibição da lista
+        atualizarListaTela();
     });
     return botaoExcluir;
 }
@@ -81,4 +81,14 @@ function atualizarListaTela(){
         // Adiciona o <li> à lista ul
         listaTela.appendChild(criarPosicaoItemLista);
 })
+}
+
+function ordenarCrescente() {
+  listaItens.sort((a, b) => a.localeCompare(b));
+  atualizarListaTela();
+}
+
+function ordenarDecrescente() {
+  listaItens.sort((a, b) => b.localeCompare(a));
+  atualizarListaTela();
 }
