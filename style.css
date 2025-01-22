@@ -48,7 +48,7 @@ p{
     width: 12rem;
 }
 
-/* Estilo específico para o botão "Chute" */
+/* Estilo específico para o botão inserir */
 .button-inserir {
     background-color: #007BFF; 
     color: #FFFFFF; 
@@ -60,7 +60,7 @@ p{
     background-color: #0056b3;
 }
 
-/* Estilo específico para o botão "Zerar" */
+/* Estilo específico para o botão limpar */
 .button-reset {
     background-color: #FFFFFF; 
     color: #4A4A4A; 
@@ -89,27 +89,23 @@ p{
 
 /* Botões de Ordenação */
 .botaoOrdenar {
-    background-color: #28a745; /* Verde para crescente */
     color: white;
     border: none;
     font-size: 2rem;
-    width: 5rem;
+    width: auto;
     padding: 1rem;
     margin-left: 1rem;
     transition: background-color 0.3s ease;
 }
 
+/* Ordenação Crescente (seta para cima) */
+.botaoOrdemCrescente{
+    background-color: #28a745;
+
+}
+
 .botaoOrdenar:hover {
     background-color: #218838;
-}
-
-/* Ordenação Crescente (seta para cima) */
-.botaoOrdenar:first-child {
-    background-color: #007BFF; /* Cor azul para ordem crescente */
-}
-
-.botaoOrdenar:first-child:hover {
-    background-color: #0056b3;
 }
 
 /* Ordenação Decrescente (seta para baixo) */
@@ -124,21 +120,18 @@ p{
 /* Estilo da Lista */
 #listaTela {
     margin: 2rem auto;
-    padding: 0;
-    list-style: none;
     width: 80%;
-    max-width: 800px;
+    max-width: 80rem;
 }
 
 .lista-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #fff;
     padding: 1rem;
     margin: 0.5rem 0;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
@@ -146,29 +139,22 @@ p{
     background-color: #f9f9f9;
 }
 
-/* Estilo do checkbox (marcar como concluído) */
+/* Estilo do checkbox */
 .checkbox-item {
     margin-right: 1rem;
 }
 
-/* Estilo do texto do item */
+/* Estilo do texto de cada item  */
 .texto-item {
     font-size: 1.6rem;
     flex-grow: 1;
-    word-wrap: break-word;
     text-align: left;
 }
 
-/* Botão de excluir */
+/* Botão de excluir cada item individualmente */
 .botao-excluir {
     background-color: transparent;
     border: none;
-    color: #e74c3c;
     font-size: 2rem;
     cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.botao-excluir:hover {
-    color: #c0392b;
 }
