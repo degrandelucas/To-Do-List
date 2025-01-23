@@ -104,16 +104,17 @@ p{
 
 }
 
-.botaoOrdenar:hover {
+.botaoOrdemCrescente:hover {
     background-color: #218838;
 }
 
 /* Ordenação Decrescente (seta para baixo) */
-.botaoOrdenar:last-child {
-    background-color: #FF5733; /* Cor laranja para ordem decrescente */
+.botaoOrdemDecrescente {
+    background-color: #FF5733; 
+    margin-left: 0.2rem;
 }
 
-.botaoOrdenar:last-child:hover {
+.botaoOrdemDecrescente:hover {
     background-color: #c13c1f;
 }
 
